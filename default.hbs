@@ -20,21 +20,17 @@
     <link rel="stylesheet" type="text/css" href="/assets/css/prism.css" />
     <script src="/assets/js/prism.js"></script>
     
-    {{! Open Graph }}
-    <link rel="canonical" href="{{url absolute="true"}}">    
+    {{! Open Graph & Twitter Cards }}
+    <!-- <link rel="canonical" href="{{url absolute="true"}}">  -->
     <meta property="og:title" content="{{meta_title}}"/>
-    <meta property="og:url" content="{{url absolute="true"}}"/>
     <meta property="og:description" content="{{@blog.description}}"/>
+    <!-- <meta property="og:url" content="{{url absolute="true"}}"/> -->
     <meta property="og:site_name" content="{{@blog.title}}">
-    {{#if @blog.cover}}
-    <meta property="og:image" content="{{@blog.cover}}"/>
-    {{/if}}
-    
-    {{! Twitter Cards }}
-    <meta property="twitter:card" content="summary"/>
+    <meta property="twitter:card" content="summary"/> 
     <meta property="twitter:title" content="{{meta_title}}"/>
     <meta property="twitter:description" content="{{@blog.description}}"/>
     {{#if @blog.cover}}
+    <meta property="og:image" content="{{@blog.url}}{{@blog.cover}}"/>
     <meta property="twitter:image" content="{{@blog.url}}{{@blog.cover}}"/>
     {{/if}}
 
