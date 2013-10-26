@@ -1,0 +1,69 @@
+{{!< default}}
+
+{{! The comment above "< default" means - insert everything in this file into
+    the {body} of the default.hbs template, which contains our header/footer. }}
+
+{{! TODO: Add support for per article cover image }}
+<div class="article-cover">
+    <div>
+        {{#if @blog.cover}}<img src="{{@blog.cover}}" class="image">{{/if}}
+    </div>
+</div>
+
+{{! Everything inside the #post tags pulls data from the post }}
+{{#post}}
+
+{{! Everything below outputs content of the the post which has been published }}
+<article>
+    <div class="container">
+        <header>
+            <div class="meta">
+                {{! TODO: add link back for author bio }}
+                {{#if author}}By <address><a rel="author" title="{{author.name}}" target="_blank">{{author}}</a> &mdash;{{/if}}
+                <time pubdate datetime="{{date format="YYYY-MM-DD"}}" title="{{date format='DD MMM YYYY'}}">{{date format='DD MMM YYYY'}}</time>
+                {{! TODO: Add tag support }}
+                <!-- {{#if tags}}on {{tags separator=" | "}}{{/if}} -->
+            </div>
+            <h1 class="title">{{{title}}}</h1>
+            {{! TODO: Subtitle support }}
+            <!-- <h2 class="subtitle"> subtitle </h2> -->
+        </header>
+
+        <section>
+            {{content}}
+            
+            {{! TODO: use include for social }}
+            <div class="social">
+                {{! TODO: make share options configurable }}
+                <div>
+                    {{! Add data-related }}
+                    <a href="https://twitter.com/share?" class="twitter-share-button" data-via="{{url absolute="true"}}" data-text="{{title}}">Tweet</a>
+                </div>
+                <div>
+                    <div class="fb-like" data-width="150" data-layout="button_count" data-action="like" data-show-faces="true" data-send="false"></div>
+                </div>
+                <div>
+                    <div class="g-plusone" data-size="medium"></div>
+                </div>
+                <div>
+                    <a href="http://news.ycombinator.com/submit" class="hn-share-button">Vote on HN</a>
+                </div>
+            </div>
+
+        </section>
+
+        {{#if author}}
+        <footer>
+            <address>
+                {{#if author.image }}<img src="{{author.image}}">{{/if}}
+                <p>Written by <strong><a rel="author" href="{{author.website}}" title="{{author.name}}" target="_blank">{{author.name}}</a></strong><br>
+                <span class="muted">{{author.bio}}</span>
+                </p>
+            </address>
+        </footer>
+        {{/if}}
+
+        {{! TODO: Add disqus support }}
+    </div>
+</article>
+{{/post}}

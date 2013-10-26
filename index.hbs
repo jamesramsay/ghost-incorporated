@@ -1,0 +1,51 @@
+{{!< default}}
+
+{{! The comment above "< default" means - insert everything in this file into
+    the {body} of the default.hbs template, which contains our header/footer. }}
+
+{{! The big featured header on the homepage, with the site logo and description }}
+<!-- TODO: Should this be a header? -->
+<div class="blog-cover" {{#if @blog.cover}}style="background-image: url({{@blog.cover}})"{{/if}}>
+    <section>
+        <div class="container">
+            <h1>{{@blog.title}}</h1>
+            {{#if @blog.description}}<h3>{{@blog.description}}</h3>{{/if}}
+
+            {{! TODO: if twitter }}
+            <!-- <a href="https://twitter.com/USER" title="Follow on Twitter" target="_blank"><i class="icon icon-twitter"></i></a> -->
+            {{! TODO: if facebook }}
+            <!-- <a href="http://facebook.com/USER" title="Like on Facebook" target="_blank"><i class="icon icon-facebook"></i></a> -->
+            <a href="{{@blog.url}}/rss/" title="RSS Feed">
+                <i class="icon icon-rss"></i>
+            </a>
+        </div>
+    </section>
+</div>
+
+
+{{! The main content area on the homepage }}
+<article class="container">
+    {{! Each post will be output using this markup }}
+    {{#foreach posts}}
+    <section class="index"> <!-- post_class: {{post_class}} -->
+        <!-- if post.author.image <img src="/images/ post.author.image " class="avatar"> endif -->
+        <div>
+            <h2 class="title"><a href="{{{url}}}" rel="prefetch">{{{title}}}</a></h2>
+            <p>{{{excerpt}}}</p>
+            <div class="meta">
+                Written By <address>{{author.name}}</a> &mdash;
+                <time pubdate datetime="{{date format='YYYY-MM-DD'}}" title="{{date format="DD MMM YYYY"}}">{{date format="DD MMM YYYY"}}</time>
+            </div>
+        </div>
+        <hr>
+    </section>
+    
+    {{/foreach}}
+    
+    {{!! After all the posts, we have the previous/next pagination links }}
+    {{pagination}}
+</article>
+
+
+
+
