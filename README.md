@@ -1,7 +1,8 @@
-# Incorporated
+# Incorporated for Ghost
 
-A theme by Kippt, Inc for Jekyll.
-Ported for [Ghost](http://github.com/tryghost/ghost/) by [James Ramsay](http://github.com/jamesramsay).
+A theme by [James Ramsay](http://github.com/jamesramsay) for [Ghost](http://github.com/tryghost/ghost/).
+
+Ported from [jekyll-incorporated](https://github.com/kippt/jekyll-incorporated) by Kippt, Inc for Jekyll.
 
 ## Copyright & License
 
