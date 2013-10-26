@@ -1,9 +1,6 @@
 /**
- * prism.js default theme for JavaScript, CSS and HTML
- * Based on dabblet (http://dabblet.com)
- * @author Lea Verou
- *
- * Modified for ghost-incorporated by James Ramsay
+ * prism.js Ghost Incorporated theme for JavaScript, CSS and HTML
+ * @author James Ramsay
  */
 
 code[class*="language-"],
@@ -56,54 +53,65 @@ pre[class*="language-"] {
 .token.comment,
 .token.prolog,
 .token.doctype,
-.token.cdata {
-	color: slategray;
-}
-
+.token.cdata,
 .token.punctuation {
-	color: #999;
+	color: #999988;
 }
 
 .namespace {
-	opacity: .7;
+	color: #555555;
 }
 
 .token.property,
-.token.tag,
+.token.tag {
+	color: #000080;
+}
+
 .token.boolean,
-.token.number,
-.token.constant,
+.token.number {
+	color: #009999;
+}
+
+.token.constant {
+  color: #008080;
+}
+
 .token.symbol {
-	color: #905;
+	color: #990073;
 }
 
 .token.selector,
 .token.attr-name,
 .token.string,
 .token.builtin {
-	color: #690;
+	color: #d14;
 }
 
-.token.operator,
+.token.operator {
+	font-weight: bold;
+}
+
 .token.entity,
 .token.url,
 .language-css .token.string,
 .style .token.string,
 .token.variable {
-	color: #a67f59;
+	color: #800080;
 	background: hsla(0,0%,100%,.5);
 }
 
 .token.atrule,
-.token.attr-value,
-.token.keyword {
+.token.attr-value {
 	color: #07a;
 }
 
+.token.keyword {
+	font-weight: bold;
+}
 
 .token.regex,
 .token.important {
-	color: #e90;
+	color: #009926;
 }
 
 .token.important {
@@ -111,6 +119,6 @@ pre[class*="language-"] {
 }
 
 .token.entity {
+	color: 800080;
 	cursor: help;
 }
-
