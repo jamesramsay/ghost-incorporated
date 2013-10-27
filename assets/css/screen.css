@@ -2563,7 +2563,7 @@ code[class*="language-"]::selection, code[class*="language-"] ::selection {
   font-weight: bold; }
 
 .token.entity {
-  color: 800080;
+  color: #800080;
   cursor: help; }
 
 @media (max-width: 1000px) {
