@@ -10,10 +10,16 @@ article {
     .social {
         height:40px;
         padding:10px 0;
+        text-align:right;
         
-        > div {
-            display:inline-block;
-            min-width:120px;
+        a {
+            color:#000;
+            opacity:0.3;
+            margin-left: 0.5em;
+        
+            &:hover {
+                opacity:0.9;
+            }
         }
     }
 
@@ -43,7 +49,7 @@ article {
 
     address {
         margin:0;
-        font-size:0.9em;
+        font-size:0.8em;
         max-height:48px;
         
         p {
@@ -57,7 +63,7 @@ article {
             height: 64px;
             margin: 0 20px 0 0;
             display: inline-block;
-            margin-top: -28px;
+            margin-top: -20px;
         }       
         
         .follow {

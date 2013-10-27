@@ -32,24 +32,15 @@
         <section>
             {{content}}
             
-            {{! TODO: use include for social }}
-            <!-- <div class="social">
-                {{! TODO: make share options configurable }}
-                <div>
-                    {{! Add data-related }}
-                    <a href="https://twitter.com/share?" class="twitter-share-button" data-via="{{url absolute="true"}}" data-text="{{title}}">Tweet</a>
-                </div>
-                <div>
-                    <div class="fb-like" data-width="150" data-layout="button_count" data-action="like" data-show-faces="true" data-send="false"></div>
-                </div>
-                <div>
-                    <div class="g-plusone" data-size="medium"></div>
-                </div>
-                <div>
-                    <a href="http://news.ycombinator.com/submit" class="hn-share-button">Vote on HN</a>
-                </div>
-            </div> -->
-
+            <div class="social">
+                <a class="icon-twitter" href="http://twitter.com/share?text={{title}}&amp;url={{url absolute="true"}}">
+                    <span class="hidden">Twitter</span>
+                </a>
+                <a class="icon-facebook" href="http://www.facebook.com/sharer.php?u={{url absolute="true"}}">
+                    <span class="hidden">Facebook</span>
+                </a>
+                <!-- <a class="icon-google-plus" href="#"><span class="hidden">Google+</span></a> -->
+            </div>
         </section>
 
         {{#if author}}

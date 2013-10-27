@@ -72,20 +72,14 @@
             </nav>
             
             <nav class="social">
-                {{! TODO: Add support for Twitter and Facebook links }}
-                <!-- <a href="https://twitter.com/USER" title="Follow on Twitter" target="_blank">
-                    <i class="icon icon-twitter black"></i>
-                </a>
-                <a href="http://facebook.com/USER" title="Follow on Facebook" target="_blank">
-                    <i class="icon icon-facebook black"></i>
-                </a> -->
-                <a href="{{@blog.url}}/rss/" title="RSS Feed">
-                    <i class="icon icon-rss black"></i>
-                </a>
+                {{! TODO: Add configuration for Twitter and Facebook links }}
+                <a class="icon-twitter" href="https://twitter.com/jamesramsay" title="Twitter"></a>
+                <a class="icon-facebook" href="http://facebook.com/jramsay" title="Facebook"></a>
+                <a class="icon-feed" href="{{@blog.url}}/rss/" title="RSS Feed"></a>
             </nav>
-            <p>Incorporated theme by <a href="https://sendtoinc.com">Inc</a>. Ported for <a href="http://ghost.com">Ghost</a> by <a href="http://github.com/jamesramsay">JR</a>.</p>
+            
+            <p><a href="https://github.com/jamesramsay/ghost-incorporated">Ghost Incorporated</a> theme by <a href="https://jramsay.com.au">JR</a>. Proudly powered by <a class="poweredby icon-ghost" href="http://ghost.com">Ghost</a>.</p>
         </div>
-        <!--<section class="poweredby">Proudly published with <a class="icon-ghost" href="http://ghost.org">Ghost</a></section> -->
     </footer>
 
     {{! Ghost outputs important scripts and data with this tag }}
