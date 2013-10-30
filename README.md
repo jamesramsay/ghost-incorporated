@@ -1,6 +1,6 @@
 # Incorporated for Ghost
 
-A theme by [James Ramsay](http://github.com/jamesramsay) for [Ghost](http://github.com/tryghost/ghost/).
+A theme by [James Ramsay](http://github.com/jamesramsay) for [Ghost](http://github.com/tryghost/ghost/). Demo: http://jramsay.com.au
 
 Ported from [jekyll-incorporated](https://github.com/kippt/jekyll-incorporated) by Kippt, Inc for Jekyll.
 
@@ -17,7 +17,6 @@ For the moment, the following improvements seem most pressing.
 
 HIGH PRIORITY
 
-- Tagging
 - Post cover image
 
 LOW PRIORITY
