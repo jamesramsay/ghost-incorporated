@@ -4,9 +4,30 @@ A theme by [James Ramsay](http://github.com/jamesramsay) for [Ghost](http://gith
 
 Ported from [jekyll-incorporated](https://github.com/kippt/jekyll-incorporated) by Kippt, Inc for Jekyll.
 
+## Features
+
+- **PORTED** – Semantic markup.
+- **PORTED** – Zoomable images.
+- **ADDED** – Webfonts rather than image assets embedded in CSS.
+- **ADDED** – Prism.js syntax highlighting. Pygments is unsuitable for Ghost.
+
+## Roadmap
+
+For the moment, the following improvements seem most pressing.
+
+HIGH PRIORITY
+
+- Tagging
+- Post cover image
+
+LOW PRIORITY
+
+- Blockquotes and feature quotes
+- Social link configuration
+
 ## Copyright & License
 
-Copyright (C) 2013 Kippt, Inc. - Released under the MIT License.
+Copyright (C) 2013 James Ramsay - Released under the MIT License.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
