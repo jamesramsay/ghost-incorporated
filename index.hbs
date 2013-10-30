@@ -15,6 +15,7 @@
             <!-- <a href="https://twitter.com/USER" title="Follow on Twitter" target="_blank"><i class="icon icon-twitter"></i></a> -->
             {{! TODO: if facebook }}
             <!-- <a href="http://facebook.com/USER" title="Like on Facebook" target="_blank"><i class="icon icon-facebook"></i></a> -->
+            {{! TODO: subscribe}}
             <!-- <a href="{{@blog.url}}/rss/" title="RSS Feed">
                 <i class="icon icon-rss"></i>
             </a> -->
@@ -33,13 +34,12 @@
             <h2 class="title"><a href="{{{url}}}" rel="prefetch">{{{title}}}</a></h2>
             <p>{{{excerpt}}}</p>
             <div class="meta">
-                Written By <address>{{author.name}}</a> &mdash;
+                Written By <address>{{author.name}}</a>{{#if tags}} on {{tags}}{{/if}} &mdash;
                 <time pubdate datetime="{{date format='YYYY-MM-DD'}}" title="{{date format="DD MMM YYYY"}}">{{date format="DD MMM YYYY"}}</time>
             </div>
         </div>
         <hr>
     </section>
-    
     {{/foreach}}
     
     {{!! After all the posts, we have the previous/next pagination links }}
