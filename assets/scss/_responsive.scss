@@ -124,3 +124,13 @@
         }
     }
 }
+
+@media (max-width: 480px) {
+
+    article {
+        .meta .author {
+            display:none;
+        }
+    }
+
+}

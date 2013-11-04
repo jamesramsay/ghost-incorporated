@@ -18,7 +18,7 @@
     <div class="container">
         <header>
             <div class="meta">
-                By <address><a href="{{author.website}}" rel="author" title="{{author.name}}" target="_blank">{{author}}</a>{{#if tags}} on {{tags}}{{/if}} &mdash;
+                <span class="author">By <address><a href="{{author.website}}" rel="author" title="{{author.name}}" target="_blank">{{author.name}}</a></address> </span>{{#if tags}}on {{tags}}{{/if}} &mdash;
                 <time pubdate datetime="{{date format="YYYY-MM-DD"}}" title="{{date format='DD MMM YYYY'}}">{{date format='DD MMM YYYY'}}</time>
             </div>
             <h1 class="title">{{{title}}}</h1>
@@ -40,16 +40,13 @@
             </div>
         </section>
 
-        {{#author}}
         <footer>
             <address>
-                {{#if image}}<img src="{{image}}">{{/if}}
-                <p>Written by <strong><a rel="author" href="{{website}}" title="{{name}}" target="_blank">{{name}}</a></strong><br>
-                <span class="muted">{{bio}}</span>
-                </p>
+                {{#if author.image}}<img src="{{author.image}}">{{/if}}
+                Written by <strong><a rel="author" href="{{author.website}}" title="{{author.name}}" target="_blank">{{author.name}}</a></strong><br>
+                <span class="muted">{{author.bio}}</span>
             </address>
         </footer>
-        {{/author}}
 
         {{! TODO: Add disqus support }}
     </div>

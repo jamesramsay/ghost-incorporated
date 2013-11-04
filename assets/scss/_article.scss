@@ -50,7 +50,8 @@ article {
     address {
         margin:0;
         font-size:0.8em;
-        max-height:48px;
+        min-height:60px;
+        max-height:60px;
         
         p {
             margin:0;
@@ -58,12 +59,11 @@ article {
         }
 
         img {
-            border-radius: 54px;
-            width: 64px;
-            height: 64px;
-            margin: 0 20px 0 0;
-            display: inline-block;
-            margin-top: -20px;
+            border-radius:54px;
+            width:64px;
+            height:64px;
+            margin:0 20px 0 0;
+            float:left;
         }       
         
         .follow {
