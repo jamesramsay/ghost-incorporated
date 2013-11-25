@@ -2307,7 +2307,8 @@ article {
   article address {
     margin: 0;
     font-size: 0.8em;
-    max-height: 48px; }
+    min-height: 60px;
+    max-height: 60px; }
     article address p {
       margin: 0;
       display: inline-block; }
@@ -2316,8 +2317,7 @@ article {
       width: 64px;
       height: 64px;
       margin: 0 20px 0 0;
-      display: inline-block;
-      margin-top: -20px; }
+      float: left; }
     article address .follow {
       margin: 1em 0 0; }
   article p {
@@ -2335,16 +2335,6 @@ article {
     article ol li, article ul li {
       font-weight: 400;
       margin-bottom: 0.5em; }
-  article blockquote {
-    border: 0;
-    font-size: 24px;
-    margin: 1.2em -4em 1.2em 0;
-    padding: 0; }
-    article blockquote p {
-      font-size: 30px;
-      line-height: 1.1;
-      color: #2077b2;
-      font-weight: 600; }
   article h1 {
     font-weight: 600;
     font-size: 2.1em;
@@ -2638,3 +2628,6 @@ code[class*="language-"]::selection, code[class*="language-"] ::selection {
       margin: 0; }
     .index img {
       display: none; } }
+@media (max-width: 480px) {
+  article .meta .author {
+    display: none; } }

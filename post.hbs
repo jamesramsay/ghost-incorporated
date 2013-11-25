@@ -18,11 +18,8 @@
     <div class="container">
         <header>
             <div class="meta">
-                {{! TODO: add link back for author bio }}
-                {{#if author}}By <address><a rel="author" title="{{author.name}}" target="_blank">{{author}}</a> &mdash;{{/if}}
+                <span class="author">By <address><a href="{{author.website}}" rel="author" title="{{author.name}}" target="_blank">{{author.name}}</a></address> </span>{{#if tags}}on {{tags}}{{/if}} &mdash;
                 <time pubdate datetime="{{date format="YYYY-MM-DD"}}" title="{{date format='DD MMM YYYY'}}">{{date format='DD MMM YYYY'}}</time>
-                {{! TODO: Add tag support }}
-                <!-- {{#if tags}}on {{tags separator=" | "}}{{/if}} -->
             </div>
             <h1 class="title">{{{title}}}</h1>
             {{! TODO: Subtitle support }}
@@ -43,16 +40,13 @@
             </div>
         </section>
 
-        {{#if author}}
         <footer>
             <address>
-                {{#if author.image }}<img src="{{author.image}}">{{/if}}
-                <p>Written by <strong><a rel="author" href="{{author.website}}" title="{{author.name}}" target="_blank">{{author.name}}</a></strong><br>
+                {{#if author.image}}<img src="{{author.image}}">{{/if}}
+                Written by <strong><a rel="author" href="{{author.website}}" title="{{author.name}}" target="_blank">{{author.name}}</a></strong><br>
                 <span class="muted">{{author.bio}}</span>
-                </p>
             </address>
         </footer>
-        {{/if}}
 
         {{! TODO: Add disqus support }}
     </div>
