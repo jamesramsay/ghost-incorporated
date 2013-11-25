@@ -4,7 +4,7 @@ A theme by [James Ramsay](http://github.com/jamesramsay) for [Ghost](http://gith
 
 Ported from [jekyll-incorporated](https://github.com/kippt/jekyll-incorporated) by Kippt, Inc for Jekyll.
 
-![Screenshot](http://l.jwr.vc/M5vP+)
+![Screenshot](http://l.jwr.vc/uTpo+)
 
 ## Features
 
