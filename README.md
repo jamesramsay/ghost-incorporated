@@ -17,13 +17,12 @@ For the moment, the following improvements seem most pressing.
 
 HIGH PRIORITY
 
-- Tagging
-- Post cover image
+- Post cover image (dependent on support by Ghost)
 
 LOW PRIORITY
 
-- Blockquotes and feature quotes
-- Social link configuration
+- Blockquotes and feature quotes (this are still a bit messy)
+- Social link configuration (hard coded for the time being)
 
 ## Copyright & License
 
@@ -35,3 +34,11 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
 NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+## Thanks
+
+Thanks to @JohnONolan, @ErisDS, and the Ghost team for creating this platform.
+
+The Ghost, Facbook, Twitter, and Google+ icons are from the Casper theme.
+Copyright (C) 2013 Ghost Foundation – Released under The MIT License.
+
