@@ -42,16 +42,16 @@
                 {{#if @blog.logo}}<a class="brand" href="/">
                     <img src="{{@blog.logo}}" alt="{{@blog.title}}">
                 </a>{{/if}}
-                <a href="{{@blog.url}}" class="home">{{@blog.title}}</a>
+                <a href="{{@blog.url}}" class="home">Blog</a>
                 {{! TODO: Menu support }}
-                <!-- <a href="/">Product</a>
-                <a href="/">About</a> -->
+                <!-- <a href="/">Product</a> -->
+                <a href="/about">About</a>
             </nav>
             {{! TODO: Tagline/link support }}
-            <!-- <nav class="tagline">
-                <span>Tagline</span>
-                <a href="/" class="btn btn-outline">Learn More</a>
-            </nav> -->
+            <nav class="tagline">
+                <span>Just a blogging platform.</span>
+                <a href="http://ghost.org" class="btn btn-outline">Learn More</a>
+            </nav>>
         </header>
     </section>
     
@@ -63,7 +63,8 @@
             &copy; <script>document.write(new Date().getFullYear())</script><noscript>2013</noscript>
             
             <nav>
-                <a href="{{@blog.url}}">{{@blog.title}}</a>
+                <a href="{{@blog.url}}">Blog</a> &middot;
+                <a href="/about">About</a>
                 {{! TODO: Menu support }}
                 <!--  &middot;
                 <a href="/">Blog</a> &middot;
@@ -78,7 +79,7 @@
                 <a class="icon-feed" href="{{@blog.url}}/rss/" title="RSS Feed"><span class="hidden">RSS Feed</span></a>
             </nav>
             
-            <p><a href="https://github.com/jamesramsay/ghost-incorporated">Ghost Incorporated</a> theme by <a href="https://jramsay.com.au">JR</a>. Proudly powered by <a class="poweredby icon-ghost" href="http://ghost.com">Ghost</a>.</p>
+            <p><a href="https://github.com/jamesramsay/ghost-incorporated">Incorporated for Ghost</a> by <a href="https://jramsay.com.au">JR</a>. Proudly powered by <a class="poweredby icon-ghost" href="http://ghost.com">Ghost</a>.</p>
         </div>
     </footer>
 

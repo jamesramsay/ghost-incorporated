@@ -39,7 +39,7 @@ NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FO
 
 ## Thanks
 
-Thanks to @JohnONolan, @ErisDS, and the Ghost team for creating this platform.
+Thanks to [@JohnONolan](http://twitter/JohnONolan), [@ErisDS](http://twitter/ErisDS), and the Ghost team for creating this platform.
 
 The Ghost, Facbook, Twitter, and Google+ icons are from the Casper theme.
 Copyright (C) 2013 Ghost Foundation – Released under The MIT License.
