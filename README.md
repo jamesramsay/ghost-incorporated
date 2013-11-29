@@ -17,13 +17,7 @@ Ported from [jekyll-incorporated](https://github.com/kippt/jekyll-incorporated) 
 
 For the moment, the following improvements seem most pressing.
 
-HIGH PRIORITY
-
 - Post cover image (dependent on support by Ghost)
-
-LOW PRIORITY
-
-- Blockquotes and feature quotes (this are still a bit messy)
 - Social link configuration (hard coded for the time being)
 
 ## Copyright & License
