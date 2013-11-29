@@ -2,6 +2,8 @@
 
 A theme by [James Ramsay](http://github.com/jamesramsay) for [Ghost](http://github.com/tryghost/ghost/).
 
+**DEMO:** [http://jramsay.com.au/ghost-incorporated-features/](http://jramsay.com.au/ghost-incorporated-features/)
+
 Ported from [jekyll-incorporated](https://github.com/kippt/jekyll-incorporated) by Kippt, Inc for Jekyll.
 
 ![Screenshot](http://l.jwr.vc/uTpo+)
