@@ -2335,6 +2335,23 @@ article {
     article ol li, article ul li {
       font-weight: 400;
       margin-bottom: 0.5em; }
+  article blockquote {
+    border: 0;
+    font-size: 1.35em;
+    margin: 1.2em -4em 1.2em 0;
+    padding: 0; }
+    article blockquote p {
+      color: #2077b2; }
+  article blockquote.fancy {
+    font-size: 0.9em;
+    text-align: center; }
+    article blockquote.fancy p {
+      margin-bottom: .5em;
+      font-family: georgia,serif;
+      font-style: italic;
+      color: #333;
+      line-height: 1.4em;
+      font-size: 2em; }
   article h1 {
     font-weight: 600;
     font-size: 2.1em;
