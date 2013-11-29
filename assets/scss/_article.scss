@@ -94,19 +94,30 @@ article {
         }
     }
     
-    // blockquote {
-    //     border:0;
-    //     font-size:24px;
-    //     margin:1.2em -4em 1.2em 0;
-    //     padding:0;
-    // 
-    //     p {
-    //         font-size:30px;
-    //         line-height:1.1;
-    //         color:$accent;
-    //         font-weight:600;
-    //     }
-    // }
+    blockquote {
+        border: 0;
+        font-size: 1.35em;
+        margin: 1.2em -4em 1.2em 0;
+        padding: 0;
+    
+        p {
+            color: $accent;
+        }
+    }
+
+    blockquote.fancy {
+        font-size:0.9em;
+        text-align: center;
+        
+        p {
+            margin-bottom: .5em;
+            font-family: georgia,serif;
+            font-style: italic;
+            color: #333;
+            line-height: 1.4em;
+            font-size: 2em;
+        }
+    }
 
     h1 {
         font-weight:600;

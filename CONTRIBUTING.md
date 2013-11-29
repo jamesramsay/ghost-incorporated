@@ -10,3 +10,12 @@ Contributions to the Incorporated theme are welcome and encouraged!
 Including a URL to an instance of the theme demonstrating the changes in your pull request makes things much easier.
 
 Thanks for contributing!
+
+## Compiling SCSS
+
+A pre-commit hook is included in the project to help ensure that the SCSS and CSS files are kept in sync.
+
+To register the hook in your development environment, run:
+
+`ln -s git-hooks/pre-commit .git/hooks/pre-commit`
+
