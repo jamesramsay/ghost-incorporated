@@ -1,19 +1,52 @@
 # Incorporated for Ghost
 
-A theme by [James Ramsay](http://github.com/jamesramsay) for [Ghost](http://github.com/tryghost/ghost/).
+![Incorporated for Ghost](http://l.jwr.vc/uTpo+)
 
-**DEMO:** [http://jramsay.com.au/ghost-incorporated-features/](http://jramsay.com.au/ghost-incorporated-features/)
+### [→ Live Demo](http://jramsay.com.au/ghost-incorporated-features/)
+### [→ Download](https://github.com/jamesramsay/ghost-incorporated/releases/latest)
 
-Ported from [jekyll-incorporated](https://github.com/kippt/jekyll-incorporated) by Kippt, Inc for Jekyll.
+> A [Ghost](https://ghost.org/) theme which provides great typography, responsive design, author details, semantic markup and more. At this time it is for the most part a port of [Jekyll Incorporated](https://github.com/kippt/jekyll-incorporated) by Kippt, Inc.
 
-![Screenshot](http://l.jwr.vc/uTpo+)
+
+## Table of Contents
+
+* [Features](#features)
+* [Installing](#installing)
+* [Configuring](#configuring)
+* [Roadmap](#roadmap)
+* [License](#license)
+* [Thanks](#thanks)
 
 ## Features
 
-- **PORTED** – Semantic markup.
-- **PORTED** – Zoomable images.
-- **ADDED** – Webfonts rather than image assets embedded in CSS.
-- **ADDED** – Prism.js syntax highlighting. Pygments is unsuitable for Ghost.
+- Designed for content
+- SEO and sharing friendly
+- Lightweight
+- Code Syntax highlighting
+- Responsive
+
+## Installing
+
+### Using Git
+1. Navigate to your Ghost theme directory `ghost/content/themes`
+2. Clone the theme repository
+```sh
+$ git clone https://github.com/jamesramsay/ghost-incorporated incorporated
+```
+3. Restart ghost and log in to your dashboard
+4. In settings under themes select **Incorporated** and save
+
+
+### Manually
+1. Download as a `.zip` or `.tar.gz` from the [latest release](https://github.com/jamesramsay/ghost-incorporated/releases/latest)
+2. Unzip the files and rename the folder to `incorporated`
+4. Copy the folder into your Ghost theme directory `ghost/content/themes`
+5. Restart ghost and log in to your dashboard
+4. In settings under themes select **Incorporated** and save
+
+## Configuring
+
+- TODO
 
 ## Roadmap
 
@@ -22,7 +55,7 @@ For the moment, the following improvements seem most pressing.
 - Post cover image (dependent on support by Ghost)
 - Social link configuration (hard coded for the time being)
 
-## Copyright & License
+## License
 
 Copyright (C) 2013 James Ramsay - Released under the MIT License.
 
