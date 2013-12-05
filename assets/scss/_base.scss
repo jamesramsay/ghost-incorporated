@@ -184,7 +184,7 @@ a {
     a {
         color:#777;
         border:0;
-        margin:0 0.5em;
+        margin:0 0 0 0.5em;
         
         &:hover {
             color:#222;
@@ -201,6 +201,12 @@ a {
     
     nav {
        display:inline-block;
+
+       a+a:before {
+         content: '· ';
+         margin-right: 0.5em;
+         color: #aaa;
+       }
     }
     
     .social {

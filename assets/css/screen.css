@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* CONFIGURATION */
 /* Bodytext font */
 /* Font for headings */
@@ -2146,7 +2147,7 @@ a {
   .site-footer a {
     color: #777;
     border: 0;
-    margin: 0 0.5em; }
+    margin: 0 0 0 0.5em; }
     .site-footer a:hover {
       color: #222; }
   .site-footer p {
@@ -2156,6 +2157,10 @@ a {
       color: #999; }
   .site-footer nav {
     display: inline-block; }
+    .site-footer nav a + a:before {
+      content: '· ';
+      margin-right: 0.5em;
+      color: #aaa; }
   .site-footer .social {
     float: right; }
     .site-footer .social a {
