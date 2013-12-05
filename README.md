@@ -46,7 +46,52 @@ $ git clone https://github.com/jamesramsay/ghost-incorporated incorporated
 
 ## Configuring
 
-- TODO
+All configurable files are located in `/partials`.
+
+#### config.hbs
+
+Configurable identifiers.
+
+* `ga_ua`: Your [Google Analytics](https://support.google.com/analytics/answer/1032385) account identifier
+
+#### menu.hbs
+
+Configure your navigation items.
+
+```html
+<a href="/about">About</a>
+<a href="/product">Product</a>
+```
+
+#### header.hbs
+
+Configurable links which may be shown in the homepage header.
+
+```html
+<a href="https://twitter.com/USER" title="Follow on Twitter" target="_blank"><i class="icon icon-twitter"></i></a>
+<a href="http://facebook.com/USER" title="Like on Facebook" target="_blank"><i class="icon icon-facebook"></i></a>
+<a href="{{@blog.url}}/rss/" title="RSS Feed"><i class="icon icon-rss"></i></a>
+```
+
+#### tagline.hbs
+
+Configurable tagline shown in the top right.
+
+```html
+<nav class="tagline">
+    <span>Just a blogging platform.</span>
+    <a href="http://ghost.org" class="btn btn-outline">Learn More</a>
+</nav>
+```
+
+#### social.hbs
+
+Configurable social links.
+
+```html
+<a class="icon-twitter" href="https://twitter.com/USER" title="Twitter"><span class="hidden">Twitter</span></a>
+<a class="icon-facebook" href="http://facebook.com/USER" title="Facebook"><span class="hidden">Facebook</span></a>
+```
 
 ## Roadmap
 
