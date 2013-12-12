@@ -15,8 +15,6 @@
 
     {{! Styles'n'Scripts }}
     <link rel="stylesheet" type="text/css" href="/assets/css/screen.css" />
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Droid+Sans:400,700" />
-    <script src="/assets/js/prism.js"></script>
     
     {{! Open Graph & Twitter Cards }}
     <!-- <link rel="canonical" href="{{url absolute="true"}}">  -->
@@ -43,15 +41,10 @@
                     <img src="{{@blog.logo}}" alt="{{@blog.title}}">
                 </a>{{/if}}
                 <a href="{{@blog.url}}" class="home">Blog</a>
-                {{! TODO: Menu support }}
-                <!-- <a href="/">Product</a> -->
-                <a href="/about">About</a>
+                {{> menu }}
             </nav>
             {{! TODO: Tagline/link support }}
-            <nav class="tagline">
-                <span>Just a blogging platform.</span>
-                <a href="http://ghost.org" class="btn btn-outline">Learn More</a>
-            </nav>>
+            {{> tagline }}
         </header>
     </section>
     
@@ -63,19 +56,12 @@
             &copy; <script>document.write(new Date().getFullYear())</script><noscript>2013</noscript>
             
             <nav>
-                <a href="{{@blog.url}}">Blog</a> &middot;
-                <a href="/about">About</a>
-                {{! TODO: Menu support }}
-                <!--  &middot;
-                <a href="/">Blog</a> &middot;
-                <a href="/">Product</a> &middot;
-                <a href="/">About</a> -->
+                <a href="{{@blog.url}}">Blog</a>
+                {{> menu }}
             </nav>
             
             <nav class="social">
-                {{! TODO: Add configuration for Twitter and Facebook links }}
-                <a class="icon-twitter" href="https://twitter.com/jamesramsay" title="Twitter"><span class="hidden">Twitter</span></a>
-                <a class="icon-facebook" href="http://facebook.com/jramsay" title="Facebook"><span class="hidden">Facebook</span></a>
+                {{> social }}
                 <a class="icon-feed" href="{{@blog.url}}/rss/" title="RSS Feed"><span class="hidden">RSS Feed</span></a>
             </nav>
             
@@ -88,5 +74,21 @@
 
     {{! The main JavaScript file for Incorporated }}
     <script type="text/javascript" src="/assets/js/index.js"></script>
+
+    {{! Google Analytics }}
+    <script type="text/javascript">
+      {{> config}}
+
+      (function(g,h,o,s,t,z){g.GoogleAnalyticsObject=s;g[s]||(g[s]=
+      function(){(g[s].q=g[s].q||[]).push(arguments)});g[s].s=+new Date;
+      t=h.createElement(o);z=h.getElementsByTagName(o)[0];
+      t.src='//www.google-analytics.com/analytics.js';
+      z.parentNode.insertBefore(t,z)}(window,document,'script','ga'));
+      ga('create',ga_ua);ga('send','pageview');
+    </script>
+
+    {{! Non-blocking assets }}
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Droid+Sans:400,700" />
+    <script src="/assets/js/prism.js"></script>
 </body>
 </html>
