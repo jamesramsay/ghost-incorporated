@@ -172,6 +172,15 @@ a {
 
 .pagination {
     text-align:center;
+
+    .page-number {
+        display: none;
+    }
+
+    .older-posts, .newer-posts {
+        @extend .btn;
+        @extend .btn-outline;
+    }
 }
 
 .site-footer {
