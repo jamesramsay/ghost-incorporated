@@ -30,5 +30,5 @@ $(window).scroll(function() {
 });
 
 $(".full img").click(function() {
-  $(".full img").toggleClass('zoom');
+  $( this ).toggleClass('zoom');
 });
