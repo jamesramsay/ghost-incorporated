@@ -7,7 +7,6 @@
 
 > A [Ghost](https://ghost.org/) theme which provides great typography, responsive design, author details, semantic markup and more. At this time it is for the most part a port of [Jekyll Incorporated](https://github.com/kippt/jekyll-incorporated) by Kippt, Inc.
 
-
 ## Table of Contents
 
 * [Features](#features)
