@@ -14,7 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     {{! Styles'n'Scripts }}
-    <link rel="stylesheet" type="text/css" href="/assets/css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="{{asset "css/screen.css"}}" />
     
     {{! Open Graph & Twitter Cards }}
     <!-- <link rel="canonical" href="{{url absolute="true"}}">  -->
@@ -73,7 +73,7 @@
     {{ghost_foot}}
 
     {{! The main JavaScript file for Incorporated }}
-    <script type="text/javascript" src="/assets/js/index.js"></script>
+    <script type="text/javascript" src="{{asset "js/index.js"}}"></script>
 
     {{! Google Analytics }}
     <script type="text/javascript">
@@ -89,6 +89,6 @@
 
     {{! Non-blocking assets }}
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Droid+Sans:400,700" />
-    <script src="/assets/js/prism.js"></script>
+    <script src="{{asset "js/prism.js"}}"></script>
 </body>
 </html>
