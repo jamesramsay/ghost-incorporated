@@ -216,9 +216,7 @@ a {
        display:inline-block;
 
        a+a:before {
-         content: '· ';
          margin-right: 0.5em;
-         color: #aaa;
        }
     }
     
