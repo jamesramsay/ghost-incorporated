@@ -1,0 +1,13 @@
+{
+  "name": "Incorporated",
+  "version": "0.1.0",
+  "description": "Incorporated theme for Ghost",
+  "homepage": "https://github.com/jamesramsay/ghost-incorporated",
+  "bugs": {
+    "url": "https://github.com/jamesramsay/ghost-incorporated/issues"
+  },
+  "author": {
+    "name": "James Ramsay",
+    "url": "http://jramsay.com.au"
+  }
+}
