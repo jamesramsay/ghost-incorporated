@@ -2,7 +2,6 @@
 
 ![Incorporated for Ghost](http://l.jwr.vc/uTpo+)
 
-### [→ Live Demo](http://jramsay.com.au/ghost-incorporated-features/)
 ### [→ Download](https://github.com/jamesramsay/ghost-incorporated/releases/latest)
 
 > A [Ghost](https://ghost.org/) theme which provides great typography, responsive design, author details, semantic markup and more. At this time it is for the most part a port of [Jekyll Incorporated](https://github.com/kippt/jekyll-incorporated) by Kippt, Inc.
